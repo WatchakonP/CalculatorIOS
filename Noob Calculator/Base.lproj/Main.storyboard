@@ -28,16 +28,16 @@
                                 <rect key="frame" x="36" y="160" width="268" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-1E-pTg">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Number Here..     " textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="t1R-Pt-XMx">
-                                        <rect key="frame" x="56" y="0.0" width="212" height="30"/>
+                                        <rect key="frame" x="55.5" y="0.0" width="212.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -45,16 +45,16 @@
                                 <rect key="frame" x="36" y="201" width="268" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfO-La-73h">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Number Here.." textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MFj-lu-INy">
-                                        <rect key="frame" x="57" y="0.0" width="211" height="30"/>
+                                        <rect key="frame" x="56.5" y="0.0" width="211.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -68,7 +68,7 @@
                                 <rect key="frame" x="46" y="250" width="228" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5W-l3-zPk">
-                                        <rect key="frame" x="0.0" y="0.0" width="113" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="46"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.24606604609929078" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="+">
@@ -79,7 +79,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-iF-7JJ">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="46"/>
+                                        <rect key="frame" x="115.5" y="0.0" width="112.5" height="46"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.25285350177304966" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="-">
@@ -95,7 +95,7 @@
                                 <rect key="frame" x="46" y="299" width="228" height="47"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgA-OI-amO">
-                                        <rect key="frame" x="0.0" y="0.0" width="113" height="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="47"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.24606604609929078" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="x">
@@ -106,7 +106,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-Z3-0xM">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="47"/>
+                                        <rect key="frame" x="115.5" y="0.0" width="112.5" height="47"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25254875886524825" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="÷">
@@ -143,6 +143,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="DivButton" destination="x0i-Z3-0xM" id="fMT-bW-EMf"/>
+                        <outlet property="Field1" destination="t1R-Pt-XMx" id="Ric-BW-YGn"/>
+                        <outlet property="Field2" destination="MFj-lu-INy" id="GkQ-ef-0PC"/>
+                        <outlet property="MinusButton" destination="0h5-iF-7JJ" id="9ef-LE-5YX"/>
+                        <outlet property="MultButton" destination="jgA-OI-amO" id="ChW-be-xaR"/>
+                        <outlet property="PlusButton" destination="P5W-l3-zPk" id="Y07-Tp-V2q"/>
                         <outlet property="ResultLabel" destination="29t-W3-Apc" id="jnr-zn-OUf"/>
                     </connections>
                 </viewController>
