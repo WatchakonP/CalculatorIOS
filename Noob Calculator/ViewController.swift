@@ -21,5 +21,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var ResultLabel: UILabel!
+    @IBAction func PlusButtonPress(_ sender: UIButton) {
+    }
+    @IBAction func MinusButtonPress(_ sender: UIButton) {
+    }
+    @IBAction func MultButtonPress(_ sender: UIButton) {
+    }
+    @IBAction func DivButtonPress(_ sender: UIButton) {
+    }
 }
 

@@ -1,26 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Noob_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sM5-ON-uJ3">
+                                <rect key="frame" x="36" y="160" width="268" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-1E-pTg">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Number Here..     " textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="t1R-Pt-XMx">
+                                        <rect key="frame" x="56" y="0.0" width="212" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-DJ-xdd">
+                                <rect key="frame" x="36" y="201" width="268" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfO-La-73h">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Number Here.." textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MFj-lu-INy">
+                                        <rect key="frame" x="57" y="0.0" width="211" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29t-W3-Apc">
+                                <rect key="frame" x="50" y="60" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-Tt-KbG">
+                                <rect key="frame" x="46" y="250" width="228" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5W-l3-zPk">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="46"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.24606604609929078" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PlusButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JI-90-XFJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-iF-7JJ">
+                                        <rect key="frame" x="116" y="0.0" width="112" height="46"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.25285350177304966" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MinusButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kY5-Nw-7d5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="efO-OF-RhV">
+                                <rect key="frame" x="46" y="299" width="228" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgA-OI-amO">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="47"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.24606604609929078" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MultButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYS-5X-HZ2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-Z3-0xM">
+                                        <rect key="frame" x="116" y="0.0" width="112" height="47"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25254875886524825" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DivButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5JA-rK-GNb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jgA-OI-amO" firstAttribute="baseline" secondItem="x0i-Z3-0xM" secondAttribute="firstBaseline" id="AV0-ln-c1o"/>
+                                    <constraint firstItem="x0i-Z3-0xM" firstAttribute="baseline" secondItem="jgA-OI-amO" secondAttribute="firstBaseline" id="r2m-G5-xjF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="29t-W3-Apc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="8cy-1d-v7d"/>
+                            <constraint firstItem="29t-W3-Apc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="EMv-Fc-YWf"/>
+                            <constraint firstItem="29t-W3-Apc" firstAttribute="centerX" secondItem="Pja-Tt-KbG" secondAttribute="centerX" id="N3z-OE-idP"/>
+                            <constraint firstItem="Pja-Tt-KbG" firstAttribute="top" secondItem="P2L-DJ-xdd" secondAttribute="bottom" constant="19" id="Rpm-XV-fkC"/>
+                            <constraint firstItem="sM5-ON-uJ3" firstAttribute="leading" secondItem="P2L-DJ-xdd" secondAttribute="leading" id="UKl-tH-Ax9"/>
+                            <constraint firstItem="29t-W3-Apc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZW-Nt-Wyg"/>
+                            <constraint firstItem="Pja-Tt-KbG" firstAttribute="leading" secondItem="efO-OF-RhV" secondAttribute="leading" id="b6R-iK-3FW"/>
+                            <constraint firstItem="sM5-ON-uJ3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dxA-eZ-oL5"/>
+                            <constraint firstItem="sM5-ON-uJ3" firstAttribute="trailing" secondItem="P2L-DJ-xdd" secondAttribute="trailing" id="ehS-Gr-kJt"/>
+                            <constraint firstItem="sM5-ON-uJ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lOI-eX-UrU"/>
+                            <constraint firstItem="P2L-DJ-xdd" firstAttribute="top" secondItem="sM5-ON-uJ3" secondAttribute="bottom" constant="11" id="lY8-Ap-VOp"/>
+                            <constraint firstItem="efO-OF-RhV" firstAttribute="top" secondItem="Pja-Tt-KbG" secondAttribute="bottom" constant="3" id="o61-tq-5aE"/>
+                            <constraint firstItem="Pja-Tt-KbG" firstAttribute="trailing" secondItem="efO-OF-RhV" secondAttribute="trailing" id="rZf-qt-7is"/>
+                            <constraint firstItem="Pja-Tt-KbG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="vfC-xO-KKR"/>
+                            <constraint firstItem="sM5-ON-uJ3" firstAttribute="top" secondItem="29t-W3-Apc" secondAttribute="bottom" constant="70" id="zbm-s6-NFz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ResultLabel" destination="29t-W3-Apc" id="jnr-zn-OUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="128.75"/>
         </scene>
     </scenes>
 </document>
